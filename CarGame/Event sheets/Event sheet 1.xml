@@ -2,5 +2,29 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <event-block sid="998280654545695">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="279857850039765" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="685892108077050">
+            <conditions>
+                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="268661639119352" type="Enemy">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-21" name="Rotate toward position" sid="884078461593426" type="Enemy">
+                    <param id="0" name="Degrees">1</param>
+                    <param id="1" name="X">player.x</param>
+                    <param id="2" name="Y">player.Y</param>
+                </action>
+                <action behavior="Car" id="7" name="Simulate control" sid="141369605312835" type="Enemy">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

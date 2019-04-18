@@ -8,15 +8,13 @@
     <author-website></author-website>
     <app-id></app-id>
     <unique-id>333iqcz7lhzil</unique-id>
-    <saved-with-version>19500</saved-with-version>
+    <saved-with-version>26700</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Car" version="1">Car</behavior>
-        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
-        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="shadowcaster" version="1">Shadow Caster</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -102,19 +100,19 @@
         <object-type name="Enemy" sid="9214501679677531">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="8Direction" sid="2791062887761595">
-                    <behavior id="EightDir" />
-                </behavior-type>
                 <behavior-type name="LineOfSight" sid="7389081855398598">
                     <behavior id="LOS" />
                 </behavior-type>
-                <behavior-type name="Pathfinding" sid="2605301352907487">
-                    <behavior id="Pathfinding" />
+                <behavior-type name="Solid" sid="831135509687029">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Car" sid="118742683099688">
+                    <behavior id="Car" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2222278651484649" speed="5">
-                    <frame duration="1" hotspotX="0.753012" hotspotY="2.08333" />
+                    <frame duration="1" hotspotX="0.512048" hotspotY="0.3" />
                 </animation>
             </animation-folder>
         </object-type>
